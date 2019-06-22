@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#E7E7E7">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_account_image"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/logo"
+        app:civ_border_width="0.8dp"
+        app:civ_border_color="#511010"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/profile_first_name"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/profile_change_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_picture"
+        android:textColor="#BC4343"
+
+
+        app:layout_constraintTop_toBottomOf="@id/profile_account_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/profile_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/edit_first_name_section"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+
+        android:singleLine="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_account_image"
+        app:layout_constraintBottom_toTopOf="@id/profile_last_name"
+
+        android:hint="@string/first_name"
+        android:paddingLeft="100dp"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/profile_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/edit_last_name_section"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+
+        android:singleLine="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_first_name"
+        app:layout_constraintBottom_toTopOf="@id/profile_phone_number"
+
+        android:hint="@string/last_name"
+        android:paddingLeft="100dp"
+
+
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/profile_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/edit_phone_number_section"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+
+        android:singleLine="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_last_name"
+        app:layout_constraintBottom_toTopOf="@id/profile_email"
+
+        android:hint="@string/phone_number"
+        android:paddingLeft="130dp"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/edit_email_section"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:editable="false"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phone_number"
+        app:layout_constraintBottom_toTopOf="@id/save_button"
+
+        android:hint="@string/email"
+        />
+
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/save_button"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="150dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email"
+        />
+
+
+    <include layout="@layout/profile_toolbar"
+        android:id="@+id/toolbar"
+        />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

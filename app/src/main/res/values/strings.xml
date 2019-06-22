@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Siren</string>
+    <string name="title_activity_main_map">Map</string>
+    <string name="email_hint">Username or E-mail</string>
+    <string name="Password_hint">Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Display Name</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="change_picture">change picture </string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">+01000000000</string>
+    <string name="email">Email here</string>
+    <string name="street_name">Street Name</string>
+    <string name="description">type your description here</string>
+    <string name="cancel_request">Cancel</string>
+    <string name="description_title">Description:</string>
+    <string name="sign_up_question">don\'t have an account?</string>
+    <string name="setting_string">Settings</string>
+    <string name="request_string">Requests</string>
+    <string name="enter_pickup">Enter Pick Up Point Here ..</string>
+    <string name="profile_string">Profile</string>
+    <string name="logout_string">Logout</string>
+    <string name="create_accout">Create Account</string>
+    <string name="siren_emergency_app">Siren Emergency App</string>
+
+    <string-array name="Incident_Type_Items">
+        <item>Empty</item>
+        <item>Car Accident</item>
+        <item>Fire</item>
+        <item>Hit and Run</item>
+
+    </string-array>
+
+    <string-array name="Severity_of_The_Incedent">
+        <item>Empty</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+
+    </string-array>
+
+    <string-array name="Number_of_Injured">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>more than 5</item>
+
+    </string-array>
+</resources>

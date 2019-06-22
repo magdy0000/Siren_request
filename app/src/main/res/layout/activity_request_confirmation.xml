@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestConfirmation"
+    android:background="@drawable/gradiant">
+
+    <fragment
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/map_confirmation"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/street_name"
+        />
+
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/street_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/stree_name_texbox"
+
+
+
+        android:gravity="center"
+        android:hint="@string/street_name"
+        android:textColorHint="#49FFFFFF"
+
+
+        app:layout_constraintBottom_toTopOf="@id/dropdownone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map_confirmation"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dropdownone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Incident Type"
+        android:textColor="#90FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/incedent_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/incedent_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/drop_down"
+        android:entries="@array/Incident_Type_Items"
+        android:gravity="center"
+
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/dropdowntwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dropdowntwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="The Severity of The Incident"
+        android:textColor="#90FFFFFF"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toTopOf="@id/severity_of_the_incedent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/severity_of_the_incedent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/drop_down"
+        android:entries="@array/Severity_of_The_Incedent"
+        android:gravity="center"
+
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/dropdownthree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dropdownthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Expected No. of Injuries"
+        android:textColor="#90FFFFFF"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/expectednumberofinjuries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/expectednumberofinjuries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/drop_down"
+
+
+        android:entries="@array/Number_of_Injured"
+        android:gravity="center"
+
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/cancel_request"
+        android:textColor="@color/colorAccent"
+
+        app:layout_constraintBottom_toTopOf="@id/map_confirmation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Request"
+        android:textColor="#FFF"
+
+        app:layout_constraintBottom_toTopOf="@id/map_confirmation"        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="40sp"
+
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        android:background="@mipmap/confirmiation_button"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expectednumberofinjuries"
+
+        />
+</android.support.constraint.ConstraintLayout>

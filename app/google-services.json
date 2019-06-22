@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "924664842531",
+    "firebase_url": "https://siren-5f6ff.firebaseio.com",
+    "project_id": "siren-5f6ff",
+    "storage_bucket": "siren-5f6ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924664842531:android:54498c008a280f9a",
+        "android_client_info": {
+          "package_name": "com.free.project.siren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924664842531-2ekrq9uvv1g0hl59jqa5tcjimuq2jv4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.free.project.siren",
+            "certificate_hash": "90d1d5d0c9aa71eec5887d6c5629e9208e2fb46a"
+          }
+        },
+        {
+          "client_id": "924664842531-mesoj4m32fvb9nj0muih6qmqamckmnn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLu8IdQvvse8a3P96-VKYY-bXZ72O3pC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924664842531-mesoj4m32fvb9nj0muih6qmqamckmnn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
